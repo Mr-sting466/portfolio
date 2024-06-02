@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="container bg-light">
+  <section id="contact" class="container">
     <h2>Contact</h2>
     <div class="text-center">
       <p>Email : <a href="mailto:donalngahan466@gmail.com">donalngahan466@gmail.com</a></p>
@@ -18,7 +18,12 @@ export default {
 .container {
   max-width: 800px;
   margin: auto;
-  padding: 60px 0;
+  padding: 60px 20px;
+}
+h2 {
+  color: #64ffda;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 a {
   color: #64ffda;

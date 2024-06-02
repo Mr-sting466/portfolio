@@ -38,6 +38,12 @@ export default {
 .container {
   max-width: 800px;
   margin: auto;
+  padding: 60px 20px;
+}
+h2 {
+  color: #64ffda;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .card {
   background-color: #233554;

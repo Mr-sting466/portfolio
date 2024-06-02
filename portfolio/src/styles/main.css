@@ -6,66 +6,74 @@ body {
     padding: 0;
   }
   
-  .navbar {
-    background-color: #0a192f;
-    border-bottom: 1px solid #233554;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    color: #64ffda;
-  }
-  
-  .nav-link {
-    color: #8892b0;
-  }
-  
-  .nav-link:hover {
-    color: #64ffda;
-  }
-  
-  section {
-    padding: 60px 0;
-  }
-  
   h2 {
-    font-size: 2.5rem;
-    color: #ccd6f6;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    font-size: 1.25rem;
-    color: #8892b0;
+    color: #64ffda;
   }
   
   .container {
-    max-width: 900px;
-    margin: auto;
+    padding: 20px;
   }
   
-  .about-section {
+  .skills-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .skills-intro {
+    font-size: 1.2rem;
+    color: #8892b0;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
   
-  .about-text {
-    flex: 1;
+  .card-skill {
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .about-links {
-    display: flex;
-    flex-direction: column;
+  .card-skill i {
+    font-size: 3rem;
+    margin-bottom: 10px;
   }
   
-  .about-links a {
+  .card-skill h3 {
     color: #64ffda;
-    text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
   
-  .about-links a:hover {
-    text-decoration: underline;
+  .card-skill p {
+    color: #8892b0;
+    font-size: 1rem;
+  }
+  
+  .card-skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .devops {
+    background-color: #6c63ff;
+  }
+  
+  .development {
+    background-color: #007bff;
+  }
+  
+  .database {
+    background-color: #38a1db;
+  }
+  
+  .cms {
+    background-color: #ffd700;
   }
   

@@ -31,18 +31,24 @@ export default {
 .container {
   max-width: 800px;
   margin: auto;
+  padding: 60px 20px;
 }
-h3 {
+h2 {
   color: #64ffda;
-}
-p {
-  color: #8892b0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 li {
   margin-bottom: 20px;
+}
+h3 {
+  color: #ccd6f6;
+}
+p {
+  color: #8892b0;
 }
 </style>

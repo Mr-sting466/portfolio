@@ -1,16 +1,18 @@
 <template>
-  <div id="app" class="pt-5">
-    <PortfolioNavbar />
-    <PortfolioAbout />
-    <PortfolioExperience />
-    <PortfolioProjects />
-    <PortfolioSkills />
-    <PortfolioContact />
+  <div id="app" class="d-flex">
+    <PortfolioSidebar />
+    <div class="main-content">
+      <PortfolioAbout />
+      <PortfolioExperience />
+      <PortfolioProjects />
+      <PortfolioSkills />
+      <PortfolioContact />
+    </div>
   </div>
 </template>
 
 <script>
-import PortfolioNavbar from './components/PortfolioNavbar.vue';
+import PortfolioSidebar from './components/PortfolioSidebar.vue';
 import PortfolioAbout from './components/PortfolioAbout.vue';
 import PortfolioExperience from './components/PortfolioExperience.vue';
 import PortfolioProjects from './components/PortfolioProjects.vue';
@@ -20,7 +22,7 @@ import PortfolioContact from './components/PortfolioContact.vue';
 export default {
   name: 'App',
   components: {
-    PortfolioNavbar,
+    PortfolioSidebar,
     PortfolioAbout,
     PortfolioExperience,
     PortfolioProjects,
@@ -40,6 +42,14 @@ body {
 }
 
 #app {
-  padding-top: 70px; /* Ajustez cette valeur si nécessaire */
+  display: flex;
+}
+
+.main-content {
+  margin-right: 0%;
+  margin-left: 40%; 
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
 }
 </style>
