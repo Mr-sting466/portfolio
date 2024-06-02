@@ -1,6 +1,6 @@
 <template>
-  <section id="projects" class="container py-5">
-    <h2 class="text-center mb-4">Projets</h2>
+  <section id="projects" class="container">
+    <h2>Projets</h2>
     <div class="row">
       <div class="col-md-4" v-for="project in projects" :key="project.id">
         <div class="card mb-4 shadow-sm">
@@ -37,8 +37,18 @@ export default {
 <style scoped>
 .container {
   max-width: 800px;
+  margin: auto;
 }
 .card {
-  border-radius: 10px;
+  background-color: #233554;
+  color: #ccd6f6;
+  border: none;
+}
+.card-title {
+  color: #64ffda;
+}
+.btn-primary {
+  background-color: #64ffda;
+  border: none;
 }
 </style>

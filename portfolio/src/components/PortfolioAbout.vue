@@ -1,7 +1,16 @@
 <template>
-  <section id="about" class="container py-5">
-    <h2 class="text-center mb-4">À propos de moi</h2>
-    <p class="lead text-center">Je suis étudiant en Master 2 à l'École IT de Paris, spécialisé en cybersécurité et réseaux. Je suis passionné par la protection des données et l'infrastructure réseau.</p>
+  <section id="about" class="about-section container">
+    <div class="about-text">
+      <h2>Donal NGAHAN</h2>
+      <h3>Étudiant en Architecture Systèmes, Réseaux et Cybersécurité</h3>
+      <p>Je construis des expériences numériques engageantes et accessibles.</p>
+    </div>
+    <div class="about-links">
+      <a href="#experience">Expérience</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
   </section>
 </template>
 
@@ -12,7 +21,24 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 800px;
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text {
+  flex: 1;
+}
+.about-links {
+  display: flex;
+  flex-direction: column;
+}
+.about-links a {
+  color: #64ffda;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.about-links a:hover {
+  text-decoration: underline;
 }
 </style>
