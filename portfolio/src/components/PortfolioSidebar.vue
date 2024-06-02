@@ -5,16 +5,16 @@
         <p>Étudiant en Architecture Systèmes, Réseaux et Cybersécurité</p>
         <nav>
           <ul>
-            <li><a href="about">À propos de moi</a></li>
-            <li><a href="experience">Expérience</a></li>
-            <li><a href="projects">Projets</a></li>
-            <li><a href="skills">Compétences</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#about">À propos de moi</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="social-icons">
           <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/donal-ngahan" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="mailto:donalngahan466@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
@@ -41,6 +41,7 @@
     flex-direction: column;
     color: #ccd6f6;
     padding: 20px;
+    box-sizing: border-box;
   }
   
   .sidebar-content {
@@ -92,6 +93,28 @@
   
   .social-icons a:hover {
     color: #64ffda;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 20px 0;
+    }
+    
+    .sidebar-content {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .sidebar nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   }
   </style>
   

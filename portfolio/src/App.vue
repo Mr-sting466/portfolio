@@ -46,10 +46,21 @@ body {
 }
 
 .main-content {
-  margin-right: 0%;
-  margin-left: 40%; 
-  width: 100%;
+  margin-left: 25%; /* Correspond à la largeur de la barre latérale */
+  width: 75%;
   padding: 20px;
   overflow: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 </style>

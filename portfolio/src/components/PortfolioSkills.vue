@@ -61,7 +61,8 @@ export default {
   background-color: #112240;
   border-radius: 10px;
   padding: 20px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -100,5 +101,17 @@ export default {
 
 .cms {
   background-color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-intro {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-skill {
+    width: 80%;
+  }
 }
 </style>
